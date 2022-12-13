@@ -1,4 +1,3 @@
-import { current } from '@reduxjs/toolkit';
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -59,6 +58,7 @@ function App() {
     dispatch(setStopwatch(0));
     dispatch(setResults([]));
     dispatch(setRunner(1));
+    setBorder(880);
   };
 
   function stopStopwatch() {
